@@ -88,9 +88,88 @@ Union
 Select * from table2
 
 ```
+### String manipulation Commands
+
+**Left, Right** - Pull a certain no. of characters from left or right side of strings.
+
+**Trim** - used to remove characters from beginnining and end of a string.
+
+**Substr** - used to create a substring by specifying start position and no. of characters.
+
+**concat** - used to concatenate columns side by side
+
+**Upper, Lower** - for changing case of string to lower, upper
+
+**Coalesce** - it is used to replace null values
+
+examples:
+```sql
+Select Left(var1,10) as var1_left from table
+
+Select substr(var1,4,2) as var1_substr from table
+
+Select concat(var1,var2) as var_concat from table
+
+Select coalesce(var1,"null") as var1_null from table
+
+```
 
 ## Advanced SQL commands
 
+### Sub Queries
+* They are too for perfoming task in multiple steps. Inner queries are first executed.
+
+* Sub queries can be used to aggregate in multiple stages. They can also be used in conditional logic 
+
+* Can be used in joins
+
+* sub queries create a view (temp table) using inner query and perform operations of outer query on that.
+
+examples:
+```sql
+
+select * from(
+ select var1 from table where var2 = "something") sub
+ where sub.var2 = "something else"
+ 
+select * form table1 where var1 = (
+  select min(var1) from table2)
+ ```
+ 
+### Window functions
+* window function performs calculation across set of rows based on other rows.
+* it is similar to group by but rows wont be aggregated and retain there original form.
+* window can be given alias
+
+**Over, Partition by** - used commonly in window funcrions
+
+**Row_number()** - used to give row number over rows seperated by patitions
+
+**rank** - same as row no but will give same rank if two values are same and next rank is skipped
+
+**dense_rank()** - same as rank but ranks are not skipped
+
+**lag, lead** - used to compare with before or after value
+
+examples:
+```sql
+Select *,sum(var_2) over (partition by var_1 order by var_3) as var_2_total from table
+
+select *, rank() over (partition by var_1 order by var_2) from table
+
+select var_1 - lag(var_1, 1) as diff from table1
+
+select sum(var_1) over window_var2, avg(var_1) over window_var2 from table
+ window window_var2 as (partition by var_2 order by var_3)
+
+```
+### Performance improvements
+* Make tables smaller, make joins less complicated
+* Explain can be used at start of query to get an idea how long query runs
+
+
+## Reference
+https://mode.com/sql-tutorial/introduction-to-sql/
 
 
 
