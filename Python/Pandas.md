@@ -48,6 +48,8 @@ help(read_csv) # this loads the documentation for checking all parameters
 
 **describe** - gives a good snapshot of columns (min,max, median etc)
 
+**value_counts()** - gives frquency count of a column
+
 ```python
 data.head(5)
 
@@ -56,9 +58,75 @@ data. tail(10)
 data["var_1"].describe()
 
 data.describe()
+
+data["var_1"].value_counts()
 ```
 
 ## Various data frame tranformation operations
+
+### Indexing and selecting
+
+* ** iloc, loc** are used for indexing and selecting data
+
+* iloc - selects using index of rows and columns
+* iloc treats the data like big matrix and just gives what are the elements in that position. It ignores actual index lables and column names
+* loc - selects using labels of rows and columns
+* loc uses the index lables and column names
+* One main thing to remember 0:10 in iloc means 0,1,2,...9. whereas 0-10 in loc means 0,1,2,3...10
+* conditional selection can be done using loc
+
+examples:
+```python
+data.column_name, data["column_name"] # select a column from data frame
+
+data.colum_name[0] # gives the first row of column
+
+data.iloc[0] # selects the first row
+
+data.iloc[:,0] # selects the first column
+
+data.iloc[:3,0] # first 3 rows of first column
+
+data.iloc[[0,1,2],0] # selection using a list
+
+data.iloc[-5:] # last 5 rows
+
+data.loc[0,"var_1"] # gives first row of var_1
+
+data.loc[:,["var_1","var_2"]] # selects all rows of two variables
+
+data.set_index("var_1) - sets index to var_1
+
+data.loc[data.var_1 == "something"] # all rows following this condition selected
+
+data.loc[(data.var_1 == "something) & (data.var_2 == "somethingelse")] # selection using multiple conditions
+
+data.loc[data.var_1.isin("var_1","var_2")]
+
+data.loc[data.var_1.notnull()] # gives all not null rows based on var_1
+
+data.loc[data.var_1 = "something"] = value # assigs the value to conditions selected data
+```
+
+### map, lambda, apply
+
+* map is used to apply a custom function to each value
+* apply is similar method as map but can transform whole dataframe
+
+example:
+```python
+data.var_1.map(lambda x: x - data.var_1.mean())
+data.var_1 - data.var_1.mean() # acheiveing above through different way
+```
+
+
+ref:
+https://www.kaggle.com/residentmario/indexing-selecting-assigning
+
+
+
+
+
 
 
 
