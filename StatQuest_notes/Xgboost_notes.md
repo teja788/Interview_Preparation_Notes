@@ -63,6 +63,9 @@
 *	scale_pos_weights: balancing of positive, negative weights. Used for imbalanced data.
 *	base_score: initial leaf score
 *	n_estimators, max_depth, learning_rate, gamma, L1, L2 maybe important parameters
+*  GridsearchCV and RadomSearchCV of sklearn are good ways for parameter tuning.
+*  scale_pos_weight is a important metric to tweek in case of imbalanced data.
+*  subsample and cosample_by_tree can be given smaller values to speedup parameter search.
 
 ## other convinent parameters in fit function
 * early_stopping_rounds: will specify no. of trees to make without improvement before stopping.
