@@ -63,3 +63,9 @@
 *	scale_pos_weights: balancing of positive, negative weights. Used for imbalanced data.
 *	base_score: initial leaf score
 *	n_estimators, max_depth, learning_rate, gamma, L1, L2 maybe important parameters
+
+## other convinent parameters in fit function
+* early_stopping_rounds: will specify no. of trees to make without improvement before stopping.
+* eval_metric - evaluation metric to be displayed
+* eval_test - we can give the dev set for evaluation here
+* verbose - should be set to true to display the metrics
