@@ -11,6 +11,12 @@
 ### lambda, map, reduce
 * lambda - creates a anonymus function. can be used for short one use functions
 
+### pass, continue, break
+* **pass** - do nothing. used in some for loops and if statements
+* **continue** - halt execution of current element and pass to next element
+* **break** - halt the execution of loop
+
+
 ### Difference between list and tuple
 * Lists are mutable. things can be added, removed etc from list
 * tuples are un-mutable
