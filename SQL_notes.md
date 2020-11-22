@@ -171,6 +171,35 @@ select sum(var_1) over window_var2, avg(var_1) over window_var2 from table
 ## Reference
 https://mode.com/sql-tutorial/introduction-to-sql/
 
+## Commonly asked sql interview questions
+
+* select the second highest salary
+
+```sql
+Select max(salary) from table 
+      where salary<(select max(salary) from table)
+```
+* select nth highest salary 
+
+```sql
+SELECT salary 
+FROM
+(SELECT salary 
+FROM emp
+ORDER BY salary DESC LIMIT n)as table2 
+ORDER BY table2.salary ASC
+LIMIT 1
+```
+* select alternate rows of table
+
+```sql
+ select rownum rn, col1,col2 from table
+          order by rn
+           where mod(rn,2)!=0
+```
+
+
+
 
 
 
