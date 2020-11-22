@@ -66,6 +66,10 @@ Select cast(var1 as integer) from table
   
 **Union** - To combine rows of two tables one below other
 
+**intersect** - works intersecting columns, similar to set intersects
+
+**minus** - rows from below table will be eliminated from rows of above table
+
 
 
 ```sql
@@ -189,6 +193,14 @@ FROM emp
 ORDER BY salary DESC LIMIT n)as table2 
 ORDER BY table2.salary ASC
 LIMIT 1
+
+select * from (select distinct sal from emp order by sal desc)
+where rownum <= 3
+
+minus
+
+select * from (select distinct sal from emp order by sal desc)
+where rownum <= 2
 ```
 * select alternate rows of table
 
@@ -197,8 +209,17 @@ LIMIT 1
           order by rn
            where mod(rn,2)!=0
 ```
+* select first n rows and last n rows of table
+
+```sql
+select * from (select rownum r, table.* from table)
+where r > ( select count(*) - n from table) or r < n
+```
 
 
+
+## references
+* https://www.youtube.com/playlist?list=PLqM7alHXFySGweLxxAdBDK1CcDEgF-Kwx - youtube geeksforgeeks
 
 
 
