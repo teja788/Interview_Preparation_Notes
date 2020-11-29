@@ -14,4 +14,8 @@
 
 ## Other Continous feature transformations
 
-* log transformation: 
+* **log transform**: It is used to convert the skwed distribution to normal or less skwed distribution
+  * By taking log of values we can decrease the range of values and effect of outliers
+* **Box-Cox** transform - it transforms the non - normal to normal distribution. It has parameter lambda which can be adjusted.
+* power transform Scaler - provided by sklearn automatically selects the lambda value.
+* 
