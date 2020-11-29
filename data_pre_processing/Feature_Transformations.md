@@ -5,12 +5,12 @@
 * Scaling should be done where some kind of distance metric is used
 * Types of scaling:
   * **Min - Max** (Normalization) - brings the values to range 0-1 
-   * formuale: (x_value - x_min)/(x_max - x_min)
+    * formuale: (x_value - x_min)/(x_max - x_min)
   * **Standard scaling** (Z - values) - calculates z values using mean and standard deviation.
-   * formulae: (x_value - x_mean)/(x_standard_dev)
+    * formulae: (x_value - x_mean)/(x_standard_dev)
   * **MaxAbsScaler** - divides by maximum absoulte value. brings the range to -1 to +1 
   * **RobustScaler** - scales the column to InterQuartile range. 
-   * formulae: (x_value - x_quartile_1)/(x_quartile_3 - x_quartile_1)
+    * formulae: (x_value - x_quartile_1)/(x_quartile_3 - x_quartile_1)
 
 ## Other Continous feature transformations
 
