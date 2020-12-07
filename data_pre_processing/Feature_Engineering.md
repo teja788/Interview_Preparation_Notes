@@ -18,4 +18,12 @@
   * By taking log of values we can decrease the range of values and effect of outliers
 * **Box-Cox transform** - it transforms the non - normal to normal distribution. It has parameter lambda which can be adjusted.
 * **power transform scaler** - provided by sklearn automatically selects the lambda value.
-* 
+
+## Categorical variable transformations
+* Categorical variables can be transformed ways to use in the model
+  * **One hot encoding** - can be used if we have less no. of categories or we can group the categroies to lesser number and use this.
+  * **Label encoding** - categories are transformed to integers and used
+  * **count encoding** - categories are replaced by count of categories in the column.
+  * **target encoding** - categories are replaced by average values of target for each feature. Here there may be a data leakage
+  * **catboost encoding** - It uses catboost to make encodings for categorical variables. It has internal mechanism to avoid target leakage.
+  * category_encoders package helps with all the above encodings.
