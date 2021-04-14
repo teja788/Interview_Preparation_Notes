@@ -1,6 +1,7 @@
 # Docker
 
-* Docker makes it very easy to install and run software without worrying about setup and dependencies.
+* Docker makes it very easy to install and run software without worrying about setup and dependencies. It can run on any kind of hardware and supports multiple underlying architecture
+* 
 * Container is a program with own set of isolated set of hardware resources. It is a instance of an image. It's sole pourpse is to run a program.
 * Docker Image is a single file with all the dependencies and configurations required to run a program.
 * Docker contains two things mainly Docker Client(Docker CLI) and Docker Server(Docker Dameon)
