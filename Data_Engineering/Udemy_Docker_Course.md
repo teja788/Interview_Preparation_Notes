@@ -1,5 +1,7 @@
 # Docker
 
+### Section 1
+
 * Docker makes it very easy to install and run software without worrying about setup and dependencies. It can run on any kind of hardware and supports multiple underlying architecture
 * 
 * Container is a program with own set of isolated set of hardware resources. It is a instance of an image. It's sole pourpse is to run a program.
@@ -22,3 +24,21 @@
 * Docker image has file system(copy paste of specific set of directories) snapshot. Image also contains specific startup commands
 * Image is taken a subset of hardware and other resources allocated and files from filesystem are pasted and commands run.
 * Namespacing and control groups belong to linux. When docker is installed Linux virtual machine is installed.
+
+### Section 2
+* Docker Image contains File System snapshot and startup command after creating container.
+* Docker run <name of image> - gets the image, makes container and runs startup command
+* Docker run <Image name> <some command> - this will override the startup command in image and runs the command we provided
+   * Ex: Docker run busybox echo hi there!
+* The command which is overriding should be present in the Filesystem otherwise we get error
+* docker ps - gives list of all the running containers
+* docker ps --all - gives list of all the containers created
+* docker run is equivalent to docker create + docker start
+* docker create hello-world - creates the container and gives a string where container is located
+* docker start -a <string where container is> this runs the container and gives output in console, without -a output is not displayed
+* docker ps -all gives status of containers present in the system. If it shows exited that means container was started and stopped.
+* Exited container can be run again using docker start -a <container id>
+* while running the container if you use command to overide start. While running the container again same command is executed.
+* docker system prune - deletes all containers, network allocations, related images
+* docker logs <container id> gives the output logs when container was ran previously. if you excluded -a while starting. you can use this.
+* 
