@@ -41,4 +41,15 @@
 * while running the container if you use command to overide start. While running the container again same command is executed.
 * docker system prune - deletes all containers, network allocations, related images
 * docker logs <container id> gives the output logs when container was ran previously. if you excluded -a while starting. you can use this.
-* 
+* docker stop <container id> - gives sigterm(signal termination) command to container which gives time for container to close the required things and stop
+* docker kill <sontainer id> - instantaneously stops the container
+* if after giving docker stop if container takes more than 10 seconds it is killed instantly.
+* docker exec <container id> <command> - runs the command inside the container
+* docker exec -it <container id> <command> - runs the command inside the container and allows us to give the input
+* when you are running a process in container you are actually running in a linux vm
+* Every process inside a linux channel has three(STDIN, STDOUT, STDERR) communication process attached to it.
+* docker exec -it <container id> sh - gives shell access to the container
+* docker run -it <container id> sh - starts the container and gives us shell access to it
+* two containers are completely seperate and isolated from each other
+
+### Section 3
