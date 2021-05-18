@@ -58,7 +58,7 @@
 * Inside of every docker file we specify a Base image, Run some commands to install additional programs, Specify a command to run on container starting
 * To create an image that runs a redis-server container:
    * Create a directory redis-image and go to the directory
-   * create a file with name Dockerfie
+   * create a file with name Dockerfile
    * Paste following commands ans save
       * FROM alpine
       * run apk add --update redis
@@ -66,4 +66,14 @@
    * Now go to terminal to the redis-image directory and run docker build .
 * FROM specifies base image, run specifies new program to install, CMD specifies start command
 * Base Image is like a OS for a Computer
-* 
+* For each command in Dockerfile a container is created and commands are run or changes made to filesystem or primary command and new image is created.
+* Created Image is taken again to create container for next step and so on until no more commands to run.
+* Docker works in a smart way while building. It uses cache of similar image on local if we are giving similar steps order.
+* We can tag a name to image. convention right now is docker_id/image_name:version
+   * docker build -t ravi/redis:latest .
+* Like creating a container from image we can also build image from a container. we can run a container change filesystem and make image from it.
+* run a container and open shell docker run -it alpine sh
+   * install redis-server using apk add --update redis
+   * open another terminal and use docker ps to get running containers id
+   * docker commit -m 'CMD ["redis-server"]' <image_id> # for making an image of the container
+ 
