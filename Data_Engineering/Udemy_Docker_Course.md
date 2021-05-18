@@ -53,3 +53,17 @@
 * two containers are completely seperate and isolated from each other
 
 ### Section 3
+* To create a custom Docker Image we write a Docker File which is a text file containing Configuaration of our container.
+* Docker file we created will be passed to Docker cli which passes to Docker server which creates the Usable image.
+* Inside of every docker file we specify a Base image, Run some commands to install additional programs, Specify a command to run on container starting
+* To create an image that runs a redis-server container:
+   * Create a directory redis-image and go to the directory
+   * create a file with name Dockerfie
+   * Paste following commands ans save
+      * FROM alpine
+      * run apk add --update redis
+      * CMD ["redis-server"]
+   * Now go to terminal to the redis-image directory and run docker build .
+* FROM specifies base image, run specifies new program to install, CMD specifies start command
+* Base Image is like a OS for a Computer
+* 
