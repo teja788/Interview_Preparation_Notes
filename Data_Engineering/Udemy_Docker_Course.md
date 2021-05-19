@@ -76,4 +76,11 @@
    * install redis-server using apk add --update redis
    * open another terminal and use docker ps to get running containers id
    * docker commit -m 'CMD ["redis-server"]' <image_id> # for making an image of the container
- 
+### Section 4
+* To run nodejs webapp on docker
+   * Specify base image - FROM node:alpine
+   * run commands to install additional programs - RUN npm install
+   * Command to run on startup - CMD["npm","start"]
+* docker hub contains all images we can use
+* we can select node with tag alpine, tag alpine its the smallest version possible
+* 
