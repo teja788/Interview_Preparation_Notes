@@ -221,6 +221,12 @@ where r > ( select count(*) - n from table) or r < n
 ## references
 * https://www.youtube.com/playlist?list=PLqM7alHXFySGweLxxAdBDK1CcDEgF-Kwx - youtube geeksforgeeks
 
+##link to help create datasets and try out queries
+#To create the dataset
+* https://www.mockaroo.com/
+# to upload the data and try queries
+* https://sqliteonline.com/
+
 
 
 
