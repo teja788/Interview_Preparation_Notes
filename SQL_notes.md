@@ -227,6 +227,9 @@ where r > ( select count(*) - n from table) or r < n
 # to upload the data and try queries
 * https://sqliteonline.com/
 
+##most asked questions with solutions
+* https://www.youtube.com/watch?v=fvPddKyHxpQ&list=PL6n9fhu94yhXcztdLO7i6mdyaegC8CJwR
+
 
 
 
