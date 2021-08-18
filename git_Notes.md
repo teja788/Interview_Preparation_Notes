@@ -58,3 +58,29 @@
 * git push origin master - push the chages to remote
 * It is good practice to pull the repository to get the latest before pushing
 * origin is the remote repository name and master is the branch which we are pushing to
+ 
+#### Common workflow
+* If we need to work on specific function or feature we create a branch for it and work there and merge later
+ 
+##### Create a branch
+* git branch <branch name> - create a branch in local
+* git checkout <branch name> - chnage the branch which we are working on, by default we will be on master
+* git branch - will show all the local branches and what branch we are working on
+* git push -u origin <branch name> - pushes the local branch to remote repository, creates a branch in remote if not present
+ 
+##### merge with master
+* git checkout master - to change to master branch
+* git pull origin master - pull any changes made to master
+* git merge <branch_name> - merges the <branch_name> with master
+* git branch --merged - shows all the merged branches
+* git push origin master - pushes the merged master changes to remote master
+ 
+##### delete a branch in remote repository
+* git push origin --delete <branch_name>
+ 
+##### Workflow summary
+* Create a branch in local for our task --> checkout created branch --> make changes --> commit & push to remote --> run unit tests if present --> checkout master --> merge earlier branch --> commit & push to remote master --> delete branch in remote
+
+ 
+## References
+* https://www.youtube.com/playlist?list=PL-osiE80TeTuRUfjRe54Eea17-YfnOOAx
