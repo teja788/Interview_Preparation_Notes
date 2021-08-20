@@ -83,6 +83,9 @@
 ##### Workflow summary
 * Create a branch in local for our task --> checkout created branch --> make changes --> commit & push to remote --> run unit tests if present --> checkout master --> merge earlier branch --> commit & push to remote master --> delete branch in remote
 
+##### Imp Notes
+* If you add a file in branch and switch to master the file will still be shown as file is untracked. If the file is commited then it won't be shown
+
  
 ## References
 * https://www.youtube.com/playlist?list=PL-osiE80TeTuRUfjRe54Eea17-YfnOOAx
