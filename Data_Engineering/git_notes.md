@@ -1,6 +1,6 @@
 ## Git Notes
 
-* Git is a distributed version control system. A remote repository is present and everyone working will have there own version of repository.
+* Git is a distributed version control system. A remote repository is present and developers will have there own version of repository.
 * Changes are first made locally and pushed to remote repository
 * By default a master branch is present. We can directly change that and push it if we have access.
 * If multiple people working on a project. Branches can be created and pushed. Pushed branch can be merged with Master if no conflicts.
@@ -77,6 +77,8 @@
  
 ##### delete a branch in remote repository
 * git push origin --delete <branch_name>
+* git branch -d <local-branch> - delete a local branch for which merge is over
+* git branch -D <local-branch> - delete a local branch for which merge or commit may not be over
  
 ##### Workflow summary
 * Create a branch in local for our task --> checkout created branch --> make changes --> commit & push to remote --> run unit tests if present --> checkout master --> merge earlier branch --> commit & push to remote master --> delete branch in remote
