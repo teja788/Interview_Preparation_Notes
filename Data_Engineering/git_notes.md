@@ -39,6 +39,16 @@
 * git reset <file_name> - removes file from staging area
 * git reset - removes all files from staging area
   
+#### git add more indepth
+* git add -A - adds all the changes to staging from whole working tree
+* git add -A "path_dir" - adds the changes from directory specified
+* git add -A is the default behaviour for git add
+* git add -u - adds all modified and deleted but not the untracked files
+* git add. - only adds changes in current directory not the top one
+* don't use git add *
+ 
+ 
+ 
 #### commiting changes
 * git commit -m "Message to commit"
 * git log - shows all the commits made, authors, dates as well
