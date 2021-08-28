@@ -30,6 +30,14 @@
  * changes in data can be sudden(due to some external change) or gradual.
  * data drift is when distribution of X(independent variables) itself changes.
  * Concept drift is when distribution of X remains same but relation between X and Y(Dependent var) changes.
- * 
+* Software engineering issues
+ * Checklist of questions while building a prediction system
+  * Realtime or batch
+  * Cloud vs edge/browser
+  * compute resources (CPU/GPU/memory)
+  * Latency, throughput(queries per second)
+  * Logging
+  * Security and privacy
+ * Deployment will have different practices from maintanence. First deployment is only half work done. 
  
 
