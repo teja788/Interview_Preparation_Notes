@@ -86,3 +86,6 @@
 * Doing well on training data
 * doing well on dev/test data
 * doing well business metrics/ project goals
+* Perfomance on disproprtainately important examples
+* performane on key slices of data
+* Rare cases - skewed data distribution, Accuracy in rare cases
