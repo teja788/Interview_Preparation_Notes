@@ -40,4 +40,41 @@
   * Security and privacy
  * Deployment will have different practices from maintanence. First deployment is only half work done. 
  
+#### Common deployment cases
+* New product/capacbility
+* Automate/assist manual task
+ * Shadow mode, run along with Human
+* Replace previous ML system
+
+##### Key ideas in deployment
+* Gradual ramp up with monitoring
+* Rollback
+
+##### Deployment patterns
+* Shadow deployment - deploy along with human or previous algorthim
+* Canary deployment - Rollup to a small fraction monitor and ramp up gradually
+* Blue/Green deployment - you have old/blue software or model running and new/green model running simaltaneously and system can switch sending data to them easily between two systems. Partial switching can also happen.
+
+##### Degrees of Automation
+* Human Only ---> Shadow mode ----> AI assitance ----> Partial Automation ----> Full Automation
+* There is human in loop in AI assistance and Partial automation. This is commonly done in industries and Manufacturing.
+* Full Automation has no human. It is used in consumer internet applications like web searches, recommendations etc
+* Deployments start with human only and proceed to one of next steps
+
+#### Monitoring
+* Monitoring dashboards can be used to monitor various metrics
+ * these can be based on what can posiibly go wrong
+ * Statistics/metric that detect the problem
+* Examples of metrics
+ * Software
+  * Memory, compute, latency, throughput, server load
+ * Input
+  * Input dataset related metrics, Missing value %
+ * Output
+  * Output related metrics, null output, click through rate
+* think of deployment as iterative system with Deployment/Monitoring --> Traffic --> Performance analysis
+* Common practice while monitoring is it set threshold for Alarms and Adapt/Change metrics over time
+* There are two types of retraing - Manual and Automatic - Manual is used in most cases as of now
+* User data generally has slow dift
+* Enterprise(B2B) data changes fast
 
