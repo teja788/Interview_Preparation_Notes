@@ -78,3 +78,11 @@
 * User data generally has slow dift
 * Enterprise(B2B) data changes fast
 
+### Modelling
+* AI System = Code(Model\Algo) + Data
+* Model development is a highly iterative process with data --> Model Training --> Error analysi ---Hyper parameter tuning etc
+
+#### Challenges in model development
+* Doing well on training data
+* doing well on dev/test data
+* doing well business metrics/ project goals
