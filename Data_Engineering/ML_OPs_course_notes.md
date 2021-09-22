@@ -89,3 +89,9 @@
 * Perfomance on disproprtainately important examples
 * performane on key slices of data
 * Rare cases - skewed data distribution, Accuracy in rare cases
+
+##### Ways to establish baseline for our solution
+* Human level performance(HLP) - good for unstructred data
+* Literature search for state of art/ open source
+* Quick and dirty implementation
+* Performance of older system
