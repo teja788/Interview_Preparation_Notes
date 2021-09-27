@@ -104,3 +104,18 @@
 ##### Skewed datasets
 * Precision and recall are better measure than accuracy for measuring model performance on highly skewed data
 * F1 score can be used for comparing model . F1 score is harmonic mean of precision and recall F1 = 2/((1/P)+(1/R))
+
+##### Data Iteration
+* Data centric AI development is becoming more important than model centric development. Improving data quality, getting more data rather than improving model on fixed dataset.
+* Data Augmentation: create relastic examples that algorthim does poorly on. but humans do well on
+* like model iteration loop we can have data iteration loop also
+* If model is large and mapping x->y is clear. Adding more data hurts accuracy
+* There is a shift from using colabarative filtering to content based filtering in product recommendations over last few years
+* For structred data adding hand desgined features still adds value
+* having a good expirement tracking helps in decision making on hyperparametrs, model etc
+* things to track in experimetns:
+ * Algorthim/ Code version
+ * Dataset used
+ * Hyperparameters
+ * Results & Metrics
+
