@@ -95,3 +95,12 @@
 * Literature search for state of art/ open source
 * Quick and dirty implementation
 * Performance of older system
+
+##### Error analysis
+* by making spreadsheet of error % in categories, overall, human level performance. We can make a informed decision how to reduce it.
+* we can collect more data of specific category, improve data quality, labeling accuracy, use data augmentation
+* It is better to check performance on various slices of data before taking model to production
+
+##### Skewed datasets
+* Precision and recall are better measure than accuracy for measuring model performance on highly skewed data
+* F1 score can be used for comparing model . F1 score is harmonic mean of precision and recall F1 = 2/((1/P)+(1/R))
