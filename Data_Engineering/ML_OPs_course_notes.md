@@ -119,3 +119,11 @@
  * Hyperparameters
  * Results & Metrics
 
+##### Define data and establish baseline
+* Data definition questions
+ * What is x? what input features to include
+ * What is y? how can we be sure targets were labelled correctly
+ * If you have small dataset having clean labels is critical
+ * emphasis should be on data process like how it is collected etc. if the dateset is big
+ * 
+
