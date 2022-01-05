@@ -45,4 +45,4 @@
 * people who label are called raters
 * types of raters - Generalists, Subject matter experts (medical images), users (app user ratings etc)
 * Two types of labelling - process feedback and human labelling
-* 
+* Process feedback is automatically we get labels from user feedbak, ratings on app or some other process
