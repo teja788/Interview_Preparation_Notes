@@ -32,4 +32,16 @@
 * Data pipeline consists of data collection, ingestion, preparation
 * Above steps has to be done as automated tasks and data collection has to be monitored as for most applications, data is not collected once but throughout the lifetime
 * Broken data is common cause of problems in production ML
-
+* key things to consider while collecting data
+  * What kind and how much data needed
+  * How od=ften new data comes in
+  * is it labelled and how expensive to label it
+  * How to translate user needs to data needs
+* Dataset issues:
+  * inconsistent formatting
+  * compounding errors if the data comes from other models
+  * monitor data sources for system issues and outages
+* while collecting data we have to take care of security, privacy and fairness. We also should have labelling system which doesn't have bias
+* people who label are called raters
+* types of raters - Generalists, Subject matter experts (medical images), users (app user ratings etc)
+* 
