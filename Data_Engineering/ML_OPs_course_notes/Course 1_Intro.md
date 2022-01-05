@@ -63,15 +63,15 @@
 
 #### Monitoring
 * Monitoring dashboards can be used to monitor various metrics
- * these can be based on what can posiibly go wrong
- * Statistics/metric that detect the problem
+  * these can be based on what can posiibly go wrong
+  * Statistics/metric that detect the problem
 * Examples of metrics
- * Software
-  * Memory, compute, latency, throughput, server load
- * Input
-  * Input dataset related metrics, Missing value %
- * Output
-  * Output related metrics, null output, click through rate
+  * Software
+    * Memory, compute, latency, throughput, server load
+  * Input
+    * Input dataset related metrics, Missing value %
+  * Output
+    * Output related metrics, null output, click through rate
 * think of deployment as iterative system with Deployment/Monitoring --> Traffic --> Performance analysis
 * Common practice while monitoring is it set threshold for Alarms and Adapt/Change metrics over time
 * There are two types of retraing - Manual and Automatic - Manual is used in most cases as of now
@@ -80,7 +80,7 @@
 
 ### Modelling
 * AI System = Code(Model\Algo) + Data
-* Model development is a highly iterative process with data --> Model Training --> Error analysi ---Hyper parameter tuning etc
+* Model development is a highly iterative process with data --> Model Training --> Error analysis ---Hyper parameter tuning etc
 
 #### Challenges in model development
 * Doing well on training data
@@ -114,10 +114,10 @@
 * For structred data adding hand desgined features still adds value
 * having a good expirement tracking helps in decision making on hyperparametrs, model etc
 * things to track in experimetns:
- * Algorthim/ Code version
- * Dataset used
- * Hyperparameters
- * Results & Metrics
+  * Algorthim/ Code version
+  * Dataset used
+  * Hyperparameters
+  * Results & Metrics
 
 ##### Define data and establish baseline
 * Data definition questions
