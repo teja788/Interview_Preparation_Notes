@@ -27,3 +27,9 @@
 * Pipeline orchestration frameworks are responsible for various components in an ML pipeline DAG dependencies. They help with pipeline automation
   * ex: Airflow, Argo, Celery, Luigi, Kuberflow
 * Tensorflow extended is open source end to end platform for deploying production ML pipelines. It can handle huge data and is scalable
+
+## Collecting data
+* Data pipeline consists of data collection, ingestion, preparation
+* Above steps has to be done as automated tasks and data collection has to be monitored as for most applications, data is not collected once but throughout the lifetime
+* Broken data is common cause of problems in production ML
+
