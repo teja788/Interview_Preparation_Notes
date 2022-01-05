@@ -27,9 +27,9 @@
 
 #### Key Challeanges
 * Concept drift and data drift
- * changes in data can be sudden(due to some external change) or gradual.
- * data drift is when distribution of X(independent variables) itself changes.
- * Concept drift is when distribution of X remains same but relation between X and Y(Dependent var) changes.
+  * changes in data can be sudden(due to some external change) or gradual.
+  * data drift is when distribution of X(independent variables) itself changes.
+  * Concept drift is when distribution of X remains same but relation between X and Y(Dependent var) changes.
 * Software engineering issues
   * Checklist of questions while building a prediction system
     * Realtime or batch
@@ -125,5 +125,4 @@
  * What is y? how can we be sure targets were labelled correctly
  * If you have small dataset having clean labels is critical
  * emphasis should be on data process like how it is collected etc. if the dateset is big
- * 
 
