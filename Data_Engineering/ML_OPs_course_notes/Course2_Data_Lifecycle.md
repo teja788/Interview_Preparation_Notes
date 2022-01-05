@@ -44,4 +44,5 @@
 * while collecting data we have to take care of security, privacy and fairness. We also should have labelling system which doesn't have bias
 * people who label are called raters
 * types of raters - Generalists, Subject matter experts (medical images), users (app user ratings etc)
+* Two types of labelling - process feedback and human labelling
 * 
