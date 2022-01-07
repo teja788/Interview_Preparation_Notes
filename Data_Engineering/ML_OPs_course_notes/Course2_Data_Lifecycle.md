@@ -46,3 +46,25 @@
 * types of raters - Generalists, Subject matter experts (medical images), users (app user ratings etc)
 * Two types of labelling - process feedback and human labelling
 * Process feedback is automatically we get labels from user feedbak, ratings on app or some other process
+
+### Validating data
+
+* Data Issues
+  * Drift and Skew
+     * Data and concept drift
+     * Schema skew
+     * Distribution skew
+* Drift: Changes in data over time 
+* Skew: difference in two version like training and serving(predicting realtime or later)
+* Data Drift : Data(x) changed due to some real world change
+* Concept Drift: Labels(y) statistical properties changed
+* Schema Skew: when training and serving doesnt have same schema
+* Distribution schew is when data distribution changes (it may be covariate or concept shift)
+* Dataset shift: when both distribution of both x,y change from training to serving
+* covariance shift: when distribution of x changes but relation between x and y remains same
+* concept shift: when relation between x and y change but distribution of x remains same across training and serving
+* Skew detection workflow contains computing baseline stats, schema  of training and serving and comparing them
+* we validate statistics, detect anamolies between them and alert
+* TFDV (tensorflow data validation) is used to understand, monitor and validate data. can work on petabytes scale
+* TFDV gives charts in browser and helps in detecting various skews
+* It can dtect schema skew, feature skew and distribution skew
