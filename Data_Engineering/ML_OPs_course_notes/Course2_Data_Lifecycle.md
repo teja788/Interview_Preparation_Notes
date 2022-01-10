@@ -68,3 +68,12 @@
 * TFDV (tensorflow data validation) is used to understand, monitor and validate data. can work on petabytes scale
 * TFDV gives charts in browser and helps in detecting various skews
 * It can dtect schema skew, feature skew and distribution skew
+* Below code is convinent to use for generating statistics and schema
+  * import tensorflow_data_validation as tfdv
+  * tfdv.generate_statistics_from_dataframe(data) - for generating statistics from dataframe
+  * tfdv.visualize_statistics(stats) - to visulize statistics neatly
+  * tfdv.infer_schema(statistics=train_stats)
+  * tfdv.display_schema(schema)
+  * tfdv.visualize_statistics() - compares statistics between two datasets
+  * 
+* 
