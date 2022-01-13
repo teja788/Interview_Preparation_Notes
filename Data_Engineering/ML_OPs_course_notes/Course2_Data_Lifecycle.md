@@ -75,5 +75,6 @@
   * tfdv.infer_schema(statistics=train_stats)
   * tfdv.display_schema(schema)
   * tfdv.visualize_statistics() - compares statistics between two datasets
-  * 
+  * anomalies =  tfdv.validate_statistics(statistics=eval_stats, schema=schema) 
+  * tfdv.display_anomalies(anomalies) - displays any anomiles present
 * 
