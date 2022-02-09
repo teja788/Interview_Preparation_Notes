@@ -6,6 +6,7 @@
     * You don't need to specify # of clusters like k-means
     * It can find arbitrarily shaped clusters or even a cluster surrounding another cluster
     * It creates seperate category for outliers and those won't effect the clusters
+    * DBSCAN is a very fast algorthim and works on huge datasets
 
 * There are two parameters in DBSSCAN 
     * epsilon : distance from a point to check what other points are present around
