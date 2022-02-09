@@ -29,3 +29,9 @@
   * epsilon is tough to find without good understanding of distribution of distances
   * DBSCAN cannot make good clusters in Data where densities in different clusters are very different
   * If there is a tie for a non-core point it is choosen in first cluster which was selected
+
+* HDBSCAN is another clustering algorthim made by some of same authors. It is better and we don't need to choose epsilon in it. Can be explored further in future.
+
+* Ref - 
+   * https://en.wikipedia.org/wiki/DBSCAN
+   * https://www.youtube.com/watch?v=RDZUdRSDOok
