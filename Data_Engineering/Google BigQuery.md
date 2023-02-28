@@ -17,6 +17,9 @@
   * Partitioning can be based on different columns
   * Physically stores in different sections
 * Clustering is also diving data but sorts and groups but physicallly won't store in seperate sections
+* Views are tenporary tables, there can be standard views which are similar to excel and materialized views which can be cached periodically
+* Procedures are stored queries which can be called. User Defined Functions are function that can be created by sql or java script which we can be using.
+* table defined function is a user defined function which returns table
 
 
 ### Reference
